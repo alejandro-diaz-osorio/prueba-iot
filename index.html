@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Metro IoT</title>
+    <link
+      rel="stylesheet"
+      href="styles.css"
+    />
+  </head>
+  <body>
+    <h2>📏 Metro Digital IoT</h2>
+    <label>Tu nombre:</label><br />
+    <input
+      id="nombre"
+      placeholder="Ej: Laura"
+    /><br />
+
+    <label>Altura del celular (en metros):</label><br />
+    <input
+      id="altura"
+      type="number"
+      step="0.01"
+      value="1.5"
+    /><br />
+
+    <p><strong>Inclinación:</strong> <span id="inclinacion">--</span>°</p>
+    <p><strong>Distancia estimada:</strong> <span id="distancia">--</span> m</p>
+
+    <button onclick="enviarDatos()">📤 Enviar a Google Sheet</button>
+
+    <script src="main.js"></script>
+  </body>
+</html>
